@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myvaluta</title>
+
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- js -->
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top flex space-between align-center">
+          <div class="logo">
+            <a href="/" class="fz-800">
+              <img src="assets/images/money bag.svg" alt="Myvaluta Logo" />
+              Myvaluta
+            </a>
+          </div>
+
+          <ul class="languages">
+            <li>
+              <a href="#" class="active">
+                <img src="assets/images/united-states 3.svg" alt="" />
+                English
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/georgia 3.svg" alt="" />
+                ქართული
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="convert">
+          <header class="flex space-between align-center">
+            <h2 class="heading-2">Convert Currency</h2>
+
+            <div class="filter">
+              <button>
+                <img src="assets/images/calendar.svg" alt="" />
+                Today
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </button>
+              <input type="hidden" name="" id="" />
+            </div>
+          </header>
+
+          <div class="converter">
+            <div class="currency-input">
+              <div class="currency-picker">
+                <div>
+                  <img src="assets/images/georgia 3.svg" alt="" />
+                  <p>GEL</p>
+                </div>
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </div>
+              <input type="number" name="" id="" placeholder="0" />
+            </div>
+            <div class="currency-input">
+              <div class="currency-picker active">
+                <div>
+                  <img src="assets/images/united-states 3.svg" alt="" />
+                  <p>USD</p>
+                </div>
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </div>
+              <input type="number" name="" id="" placeholder="0" />
+            </div>
+            <div class="currency-input">
+              <div class="currency-picker">
+                <div>
+                  <img src="assets/images/european-union 2.svg" alt="" />
+                  <p>EUR</p>
+                </div>
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </div>
+              <input type="number" name="" id="" placeholder="0" />
+            </div>
+            <div class="currency-input">
+              <div class="currency-picker">
+                <div>
+                  <img src="assets/images/turkey 2.svg" alt="" />
+                  <p>TRY</p>
+                </div>
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </div>
+              <input type="number" name="" id="" placeholder="0" />
+            </div>
+            <div class="currency-input">
+              <div class="currency-picker">
+                <div>
+                  <img src="assets/images/russia 2.svg" alt="" />
+                  <p>RUB</p>
+                </div>
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </div>
+              <input type="number" name="" id="" placeholder="0" />
+            </div>
+          </div>
+
+          <div class="flex space-between">
+            <p class="text-accent">Last updated Apr 15, 2022, 12:55</p>
+
+            <div class="convert__actions">
+              <a href="#">
+                <img src="assets/images/share.svg" alt="" />
+                Share
+              </a>
+              <a href="#">
+                <img src="assets/images/printer.svg" alt="" />
+                Print
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <header>
+          <ul class="tabs__headings">
+            <li>
+              <button data-tab-target="#fiat" class="active">Fiat Exchange Rate</button>
+            </li>
+            <li>
+              <button data-tab-target="#banks">Exchange Rate in Banks & Kiosks</button>
+            </li>
+            <li>
+              <button data-tab-target="#crypto">Cryptocurrency Rates</button>
+            </li>
+          </ul>
+        </header>
+
+        <div class="tab-content">
+          <div class="exchange active" data-tab-content id="fiat">
+            <header class="exchange__header flex space-between">
+              <h2 class="heading-2">Official Exchange Rate</h2>
+
+              <p class="text-accent">Last updated Apr 15, 2022, 12:55</p>
+            </header>
+
+            <div class="exchange-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Quantity</th>
+                    <th>Exchange Rate</th>
+                    <th>Difference</th>
+                    <th>Last 7 Days</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button>
+                <img src="assets/images/down-arrow 3.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="exchange" data-tab-content id="banks">
+            <header class="exchange__header flex space-between">
+              <h2 class="heading-2">Exchange Rate in Banks & Kiosks</h2>
+
+              <p class="text-accent">Last updated Apr 15, 2022, 12:55</p>
+            </header>
+
+            <div class="exchange-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Quantity</th>
+                    <th>Exchange Rate</th>
+                    <th>Difference</th>
+                    <th>Last 7 Days</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button>
+                <img src="assets/images/down-arrow 3.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="exchange" data-tab-content id="crypto">
+            <header class="exchange__header flex space-between">
+              <h2 class="heading-2">Cryptocurrency Rates</h2>
+
+              <p class="text-accent">Last updated Apr 15, 2022, 12:55</p>
+            </header>
+
+            <div class="exchange-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Quantity</th>
+                    <th>Exchange Rate</th>
+                    <th>Difference</th>
+                    <th>Last 7 Days</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex gap" style="--gap: 0.5rem">
+                        <div>
+                          <img src="assets/images/united-states 3.svg" alt="" />
+                        </div>
+                        USD
+                      </div>
+                    </td>
+                    <td>1 US Dollar</td>
+                    <td>3.0841</td>
+                    <td>0.086</td>
+                    <td>
+                      <div>
+                        <img src="assets/images/Vector 2.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button>
+                <img src="assets/images/down-arrow 3.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dynamics">
+        <header class="flex space-between align-center">
+          <h2 class="heading-2">Exchange Dynamics</h2>
+
+          <div class="flex gap">
+            <div class="filter">
+              <button>
+                <img src="assets/images/united-states 3.svg" alt="" />
+                USD
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </button>
+              <!-- <input type="date" name="" id="" /> -->
+            </div>
+            <div class="filter">
+              <button>
+                <img src="assets/images/calendar.svg" alt="" />
+                Today
+                <img src="assets/images/down-arrow 4.svg" alt="" />
+              </button>
+              <!-- <input type="date" name="" id="" /> -->
+            </div>
+          </div>
+        </header>
+
+        <div>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="get-app">
+        <h2 class="heading-2">Get the mobile app</h2>
+
+        <div class="flex justify-center gap">
+          <a href="#">
+            <img src="assets/images/app-store-and-google-play 1.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="assets/images/app-store-and-google-play 2.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="container flex space-between">
+        <ul class="flex gap fz-700 footer__nav" style="--gap: 2rem">
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <ul class="flex gap" style="--gap: 1.5rem">
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/facebook 1.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/twitter-sign 1.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/linkedin 1.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const ctx = document.getElementById('lineChart').getContext('2d')
+
+      const DATA_COUNT = 7
+      const labels = ['ორშ', 'სამ', 'ოთხ', 'ხუთ', 'პარ', 'შაბ', 'კვი']
+
+      const datapoints = [2, 3, 3, 3.5, 3, 2, 2]
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: 'USD',
+            data: datapoints,
+            borderColor: '#459216',
+            background: 'linear-gradient(180deg, rgba(69, 146, 22, 0.2) 0%, rgba(69, 146, 22, 0) 100%);',
+            fill: true,
+            cubicInterpolationMode: 'monotone',
+            tension: 10,
+          },
+        ],
+      }
+
+      const config = {
+        type: 'line',
+        data: data,
+        options: {
+          responsive: true,
+          plugins: {
+            title: {
+              display: false,
+            },
+            legend: {
+              display: false,
+            },
+          },
+          interaction: {
+            intersect: false,
+          },
+          scales: {
+            x: {
+              display: true,
+              title: {
+                display: true,
+              },
+            },
+            y: {
+              display: true,
+
+              suggestedMin: 2.0,
+              suggestedMax: 4.0,
+            },
+          },
+        },
+      }
+      const myChart = new Chart(ctx, config)
+    </script>
+  </body>
+</html>

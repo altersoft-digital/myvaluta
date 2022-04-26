@@ -1,0 +1,94 @@
+.header {
+  margin-bottom: 52px;
+  padding-block: 32px 52px;
+  background-image: url('../images/Group 372.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    margin-bottom: 52px;
+  }
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--clr-theme-dark);
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--clr-theme-dark);
+    text-decoration: none;
+
+    &.active {
+      background: #eff1f0;
+      border: 1px solid #8b9891;
+      box-sizing: border-box;
+      border-radius: 40px;
+      padding: 13px 24px;
+    }
+  }
+}
+
+.convert {
+  header {
+    margin-bottom: 52px;
+  }
+
+  .converter {
+    margin-bottom: 52px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      display: flex;
+      gap: 8px;
+      font-size: 1rem;
+      color: rgba(38, 62, 51, 0.7);
+      text-decoration: none;
+    }
+  }
+
+  input {
+    padding-block: 26px;
+    padding-left: 112px;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--clr-theme-dark);
+
+    background: var(--clr-white);
+    border: 1px solid rgba(38, 62, 51, 0.1);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &::placeholder {
+      font-family: inherit;
+      color: rgba(38, 62, 51, 0.5);
+    }
+  }
+}

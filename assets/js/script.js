@@ -89,7 +89,24 @@
     })
   }
 
+  // datepicker
+  function datepicker() {
+    if (!document.querySelector('.filter-by-date')) return
+
+    const datefilters = document.querySelectorAll('.filter-by-date')
+    datefilters.forEach((filter) => {
+      const input = filter.querySelector('input')
+      const chosenDate = filter.querySelector('button span')
+
+      input.addEventListener('change', () => {
+        const inputValue = input.value
+        chosenDate.innerHTML = inputValue
+      })
+    })
+  }
+
   filterDropdown()
   currencyDropdown()
   showMore()
+  datepicker()
 })()

@@ -4,6 +4,14 @@
 
   background: rgba(91, 146, 121, 0.03);
 
+  max-height: 407px;
+  overflow-y: clip;
+  transition: all 200ms ease-in-out;
+
+  &.active {
+    max-height: 1000px;
+  }
+
   /* width */
   &::-webkit-scrollbar {
     height: 2px;
@@ -22,14 +30,6 @@
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
     background: rgb(194, 194, 194);
-  }
-
-  & > button {
-    display: block;
-    background-color: transparent;
-    border: none;
-    margin: 0 auto;
-    cursor: pointer;
   }
 
   table {
@@ -84,4 +84,14 @@
       }
     }
   }
+}
+
+.show-more {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding-block: 32px;
+  background-color: rgba(91, 146, 121, 0.03);
+  border: none;
+  cursor: pointer;
 }

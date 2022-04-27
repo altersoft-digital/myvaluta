@@ -72,6 +72,21 @@
     })
   }
 
-  currencyDropdown()
+  // show more of table content
+  function showMore() {
+    if (!document.querySelector('.show-more')) return
+
+    const btns = document.querySelectorAll('.show-more')
+
+    btns.forEach((btn) => {
+      const table = btn.closest('.exchange').querySelector('.exchange-table')
+      btn.addEventListener('click', () => {
+        table.classList.toggle('active')
+      })
+    })
+  }
+
   filterDropdown()
+  currencyDropdown()
+  showMore()
 })()

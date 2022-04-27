@@ -555,10 +555,16 @@ p {
   padding-bottom: 24px;
   overflow-x: auto;
   background: rgba(91, 146, 121, 0.03);
+  max-height: 407px;
+  overflow-y: clip;
+  transition: all 200ms ease-in-out;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
+}
+.exchange-table.active {
+  max-height: 1000px;
 }
 .exchange-table::-webkit-scrollbar {
   height: 2px;
@@ -571,13 +577,6 @@ p {
 }
 .exchange-table::-webkit-scrollbar-thumb:hover {
   background: rgb(194, 194, 194);
-}
-.exchange-table > button {
-  display: block;
-  background-color: transparent;
-  border: none;
-  margin: 0 auto;
-  cursor: pointer;
 }
 .exchange-table table {
   width: 100%;
@@ -619,6 +618,16 @@ p {
 }
 .exchange-table td:last-child img {
   margin-inline: auto;
+}
+
+.show-more {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding-block: 32px;
+  background-color: rgba(91, 146, 121, 0.03);
+  border: none;
+  cursor: pointer;
 }
 
 .footer {

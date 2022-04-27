@@ -71,24 +71,4 @@
       text-decoration: none;
     }
   }
-
-  input {
-    padding-block: 26px;
-    padding-left: 112px;
-    width: 100%;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--clr-theme-dark);
-
-    background: var(--clr-white);
-    border: 1px solid rgba(38, 62, 51, 0.1);
-    box-sizing: border-box;
-    border-radius: 8px;
-
-    &::placeholder {
-      font-family: inherit;
-      color: rgba(38, 62, 51, 0.5);
-    }
-  }
 }

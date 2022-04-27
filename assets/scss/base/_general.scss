@@ -128,31 +128,3 @@ p {
     margin-bottom: 27px;
   }
 }
-
-.currency-input {
-  position: relative;
-}
-
-.currency-picker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding-inline: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(38, 62, 51, 0.05);
-  border-radius: 7px 0px 0px 7px;
-
-  &.active {
-    background-color: #5b9279;
-    color: var(--clr-white);
-  }
-
-  & > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-}

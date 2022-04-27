@@ -1,0 +1,23 @@
+.dropdown {
+  &.active {
+    & > button {
+      border-radius: 22px 22px 0 0;
+    }
+
+    .dropdown-options {
+      max-height: 500px;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+}
+
+.dropdown-options {
+  position: absolute;
+  max-height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transform-origin: top;
+
+  transition: all 200ms ease-in-out;
+}

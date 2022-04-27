@@ -18,6 +18,11 @@
     border-radius: 40px;
     cursor: pointer;
     transition: border-radius 200ms ease-in-out;
+
+    & > div {
+      display: flex;
+      gap: 12px;
+    }
   }
 
   input {

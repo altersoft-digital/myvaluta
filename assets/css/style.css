@@ -58,6 +58,10 @@ select {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -273,32 +277,6 @@ p {
   margin-bottom: 27px;
 }
 
-.currency-input {
-  position: relative;
-}
-
-.currency-picker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding-inline: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(38, 62, 51, 0.05);
-  border-radius: 7px 0px 0px 7px;
-}
-.currency-picker.active {
-  background-color: #5b9279;
-  color: var(--clr-white);
-}
-.currency-picker > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .header {
   margin-bottom: 52px;
   padding-block: 32px 52px;
@@ -361,9 +339,13 @@ p {
   color: rgba(38, 62, 51, 0.7);
   text-decoration: none;
 }
-.convert input {
+
+.currency-input {
+  position: relative;
+}
+.currency-input input {
   padding-block: 26px;
-  padding-left: 112px;
+  padding-left: 135px;
   width: 100%;
   font-family: inherit;
   font-weight: 500;
@@ -374,9 +356,78 @@ p {
   box-sizing: border-box;
   border-radius: 8px;
 }
-.convert input::placeholder {
+.currency-input input::placeholder {
   font-family: inherit;
   color: rgba(38, 62, 51, 0.5);
+}
+
+.currency-picker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--clr-theme-dark);
+  background: var(--clr-gray);
+  border-radius: 7px 0px 0px 7px;
+  transition: all 200ms ease-in-out;
+}
+.currency-picker.active {
+  background-color: #5b9279;
+  color: var(--clr-white);
+  border-bottom-left-radius: 0px;
+}
+.currency-picker > button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 1rem;
+  color: inherit;
+  text-transform: uppercase;
+  border: none;
+}
+.currency-picker > button > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.currency-picker > button > div img {
+  width: 21px;
+}
+.currency-picker > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.currency-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #f4f5f5;
+  border: 1px solid rgba(38, 62, 51, 0.5);
+  border-radius: 0 0 22px 22px;
+}
+.currency-options button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-inline: 1rem;
+  padding-block: 0.25rem;
+  color: var(--clr-theme-dark);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.currency-options button img {
+  width: 20px;
+  height: 20px;
 }
 
 .tabs__headings {
@@ -423,6 +474,24 @@ p {
   display: block;
 }
 
+.dropdown.active > button {
+  border-radius: 22px 22px 0 0;
+}
+.dropdown.active .dropdown-options {
+  max-height: 500px;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.dropdown-options {
+  position: absolute;
+  max-height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transform-origin: top;
+  transition: all 200ms ease-in-out;
+}
+
 .filter {
   position: relative;
   width: fit-content;
@@ -443,6 +512,10 @@ p {
   border-radius: 40px;
   cursor: pointer;
   transition: border-radius 200ms ease-in-out;
+}
+.filter > button > div {
+  display: flex;
+  gap: 12px;
 }
 .filter input {
   all: unset !important;

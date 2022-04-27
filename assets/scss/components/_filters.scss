@@ -1,0 +1,74 @@
+.filter {
+  position: relative;
+  width: fit-content;
+
+  & > button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    min-width: 153px;
+    padding-block: 14px;
+    padding-inline: 20px;
+    font-size: 1.125rem;
+    color: var(--clr-theme-dark);
+    background: rgba(38, 62, 51, 0.05);
+    border: 1px solid rgba(38, 62, 51, 0.5);
+    box-sizing: border-box;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: border-radius 200ms ease-in-out;
+  }
+
+  input {
+    all: unset !important;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.filter-dropdown {
+  &.active {
+    & > button {
+      border-radius: 22px 22px 0 0;
+    }
+
+    .filter-options {
+      max-height: 500px;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+}
+
+.filter-options {
+  position: absolute;
+  max-height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transform-origin: top;
+
+  transition: all 200ms ease-in-out;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(38, 62, 51, 0.05);
+  border: 1px solid rgba(38, 62, 51, 0.5);
+  border-radius: 0 0 22px 22px;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding-block: 14px;
+    padding-inline: 20px;
+    font-size: 1.125rem;
+    color: var(--clr-theme-dark);
+
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -50,3 +50,9 @@
 .text-accent {
   color: rgba(38, 62, 51, 0.7);
 }
+
+.hide-on-md {
+  @media (max-width: 834px) {
+    display: none;
+  }
+}

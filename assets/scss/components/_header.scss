@@ -28,6 +28,10 @@
   gap: 24px;
   list-style-type: none;
 
+  @media (max-width: 834px) {
+    display: none;
+  }
+
   a {
     display: flex;
     align-items: center;

@@ -20,25 +20,28 @@
   function filterDropdown() {
     if (!document.querySelector('.filter-dropdown')) return
 
-    const dropdown = document.querySelector('.filter-dropdown')
-    const trigger = dropdown.querySelector('[dropdown-trigger]')
-    const options = dropdown.querySelectorAll('.filter-options button')
+    const dropdowns = document.querySelectorAll('.filter-dropdown')
 
-    trigger.addEventListener('click', () => {
-      dropdown.classList.toggle('active')
-    })
+    dropdowns.forEach((dropdown) => {
+      const trigger = dropdown.querySelector('[dropdown-trigger]')
+      const options = dropdown.querySelectorAll('.filter-options button')
 
-    options.forEach((option) => {
-      option.addEventListener('click', () => {
-        // update filter button chosen option
-        const optionInnerContent = option.innerHTML
-        trigger.querySelector('div').innerHTML = optionInnerContent
+      trigger.addEventListener('click', () => {
+        dropdown.classList.toggle('active')
+      })
 
-        // close dropdown
-        dropdown.classList.remove('active')
+      options.forEach((option) => {
+        option.addEventListener('click', () => {
+          // update filter button chosen option
+          const optionInnerContent = option.innerHTML
+          trigger.querySelector('div').innerHTML = optionInnerContent
 
-        // submit api call from here
-        console.log(option.value)
+          // close dropdown
+          dropdown.classList.remove('active')
+
+          // submit api call from here
+          console.log(option.value)
+        })
       })
     })
   }

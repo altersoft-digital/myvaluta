@@ -14,9 +14,7 @@
     color: var(--clr-theme-dark);
     background: rgba(38, 62, 51, 0.05);
     border: 1px solid rgba(38, 62, 51, 0.5);
-    box-sizing: border-box;
     border-radius: 40px;
-    cursor: pointer;
     transition: border-radius 200ms ease-in-out;
 
     @media (max-width: 560px) {
@@ -44,7 +42,8 @@
       border-radius: 22px 22px 0 0;
     }
 
-    .filter-options {
+    .filter-options,
+    .languages-options {
       max-height: 500px;
       transform: scaleY(1);
       opacity: 1;

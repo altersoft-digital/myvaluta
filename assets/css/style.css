@@ -204,62 +204,6 @@ p {
   color: var(--clr-theme-dark);
 }
 
-.exchange-table {
-  padding-bottom: 24px;
-  background: rgba(91, 146, 121, 0.03);
-}
-.exchange-table > button {
-  display: block;
-  background-color: transparent;
-  border: none;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.exchange-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.exchange-table tbody tr:not(:last-child) td {
-  border-bottom: 1px solid rgba(38, 62, 51, 0.05);
-}
-.exchange-table th {
-  padding-block: 16px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--clr-theme-dark);
-  background-color: var(--clr-white);
-}
-.exchange-table th,
-.exchange-table td {
-  text-align: left;
-}
-.exchange-table th:first-child,
-.exchange-table td:first-child {
-  padding-left: 32px;
-}
-.exchange-table th:last-child,
-.exchange-table td:last-child {
-  text-align: center;
-}
-.exchange-table td {
-  font-size: 0.875rem;
-  color: var(--clr-theme-dark);
-  padding-block: 28px;
-}
-.exchange-table td:last-child img {
-  margin-inline: auto;
-}
-
-.get-app {
-  margin-bottom: 54px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 23px;
-}
-
 .exchange {
   margin-bottom: 32px;
 }
@@ -268,13 +212,35 @@ p {
   padding-block: 24px 32px;
   background: rgba(91, 146, 121, 0.03);
 }
+@media (max-width: 560px) {
+  .exchange__header {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 834px) {
+  .exchange__header p {
+    display: none;
+  }
+}
 
 .dynamics {
   padding: 24px 32px;
   background: var(--clr-theme-trans);
 }
+@media (max-width: 560px) {
+  .dynamics {
+    padding: 0;
+  }
+}
 .dynamics header {
   margin-bottom: 27px;
+}
+@media (max-width: 834px) {
+  .dynamics header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }
 
 .header {
@@ -324,8 +290,8 @@ p {
 .convert .converter {
   margin-bottom: 52px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 24px;
 }
 .convert__actions {
   display: flex;
@@ -412,6 +378,7 @@ p {
   background: #f4f5f5;
   border: 1px solid rgba(38, 62, 51, 0.5);
   border-radius: 0 0 22px 22px;
+  z-index: 10;
 }
 .currency-options button {
   display: flex;
@@ -438,6 +405,23 @@ p {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(38, 62, 51, 0.1);
+  overflow-x: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.tabs__headings::-webkit-scrollbar {
+  height: 2px;
+}
+.tabs__headings::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.tabs__headings::-webkit-scrollbar-thumb {
+  background: rgb(230, 230, 230);
+}
+.tabs__headings::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 194, 194);
 }
 .tabs__headings button {
   position: relative;
@@ -445,6 +429,7 @@ p {
   padding-block: 17px;
   font-size: 1rem;
   color: var(--clr-theme-dark);
+  white-space: nowrap;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -513,6 +498,12 @@ p {
   cursor: pointer;
   transition: border-radius 200ms ease-in-out;
 }
+@media (max-width: 560px) {
+  .filter > button {
+    padding-block: 10px;
+    padding-inline: 16px;
+  }
+}
 .filter > button > div {
   display: flex;
   gap: 12px;
@@ -543,9 +534,10 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: rgba(38, 62, 51, 0.05);
+  background: #f4f5f5;
   border: 1px solid rgba(38, 62, 51, 0.5);
   border-radius: 0 0 22px 22px;
+  z-index: 10;
 }
 .filter-options button {
   display: flex;
@@ -559,19 +551,126 @@ p {
   border: none;
 }
 
+.exchange-table {
+  padding-bottom: 24px;
+  overflow-x: auto;
+  background: rgba(91, 146, 121, 0.03);
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.exchange-table::-webkit-scrollbar {
+  height: 2px;
+}
+.exchange-table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.exchange-table::-webkit-scrollbar-thumb {
+  background: rgb(230, 230, 230);
+}
+.exchange-table::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 194, 194);
+}
+.exchange-table > button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.exchange-table table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+.exchange-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(38, 62, 51, 0.05);
+}
+.exchange-table th {
+  padding-block: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-theme-dark);
+  background-color: var(--clr-white);
+}
+.exchange-table th,
+.exchange-table td {
+  text-align: left;
+}
+.exchange-table th:first-child,
+.exchange-table td:first-child {
+  padding-left: 32px;
+}
+@media (max-width: 560px) {
+  .exchange-table th:first-child,
+.exchange-table td:first-child {
+    padding-left: 20px;
+  }
+}
+.exchange-table th:last-child,
+.exchange-table td:last-child {
+  text-align: center;
+}
+.exchange-table td {
+  font-size: 0.875rem;
+  color: var(--clr-theme-dark);
+  padding-block: 28px;
+}
+.exchange-table td:last-child img {
+  margin-inline: auto;
+}
+
 .footer {
   margin-top: 70px;
   padding-block: 52px;
+  padding-inline: 1rem;
   background-color: var(--clr-theme-trans);
+}
+@media (max-width: 560px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 560px) {
+  .footer > div:last-child {
+    flex-direction: column;
+  }
 }
 .footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+@media (max-width: 560px) {
+  .footer__nav {
+    flex-direction: column;
+  }
+}
 .footer__nav a {
   color: rgba(38, 62, 51, 0.7);
   text-decoration: none;
+}
+
+.get-app {
+  margin-bottom: 54px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+@media (max-width: 560px) {
+  .get-app > div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 560px) {
+  .get-app .heading-2 {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

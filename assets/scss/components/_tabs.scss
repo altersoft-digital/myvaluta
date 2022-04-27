@@ -9,12 +9,35 @@
     align-items: center;
     border-bottom: 1px solid rgba(38, 62, 51, 0.1);
 
+    overflow-x: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      height: 2px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgb(230, 230, 230);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(194, 194, 194);
+    }
+
     button {
       position: relative;
       padding-inline: 32px;
       padding-block: 17px;
       font-size: 1rem;
       color: var(--clr-theme-dark);
+      white-space: nowrap;
       background-color: transparent;
       border: none;
       cursor: pointer;

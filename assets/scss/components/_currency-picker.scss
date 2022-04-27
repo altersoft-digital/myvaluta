@@ -1,3 +1,30 @@
+.convert {
+  header {
+    margin-bottom: 52px;
+  }
+
+  .converter {
+    margin-bottom: 52px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 24px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      display: flex;
+      gap: 8px;
+      font-size: 1rem;
+      color: rgba(38, 62, 51, 0.7);
+      text-decoration: none;
+    }
+  }
+}
+
 .currency-input {
   position: relative;
 
@@ -81,6 +108,8 @@
   background: #f4f5f5;
   border: 1px solid rgba(38, 62, 51, 0.5);
   border-radius: 0 0 22px 22px;
+
+  z-index: 10;
 
   button {
     display: flex;

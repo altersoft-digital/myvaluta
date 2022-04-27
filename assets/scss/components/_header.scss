@@ -45,30 +45,3 @@
     }
   }
 }
-
-.convert {
-  header {
-    margin-bottom: 52px;
-  }
-
-  .converter {
-    margin-bottom: 52px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 25px;
-  }
-
-  &__actions {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-
-    a {
-      display: flex;
-      gap: 8px;
-      font-size: 1rem;
-      color: rgba(38, 62, 51, 0.7);
-      text-decoration: none;
-    }
-  }
-}

@@ -35,20 +35,21 @@
                 <ul class="languages">
                     <li>
                         <a href="#" class="active">
-                            <img src="assets/images/flags/us.svg" alt="" /> English
+                            <img id="en" src="assets/images/flags/uk.svg" alt="English" />
+                            <img id="ge" class="hidden-language-img" src="assets/images/flags/geo.svg" alt="Georgian">
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" class="ff-geo">
                             <img src="assets/images/flags/geo.svg" alt="" /> ქართული
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
-
-                <div class="languages-dropdown filter-dropdown">
+                <img id="burgerbar" onclick="openpopup('.burger-bar-menu-main')" class="burger-bar" src="assets/images/burger-bar.svg" alt="burger-bar">
+                <!-- <div class="languages-dropdown filter-dropdown">
                     <button dropdown-trigger>
               <div>
-                <img src="assets/images/flags/us.svg" alt="" />
+                <img src="assets/images/flags/uk.svg" alt="" />
                 <span>English</span>
               </div>
               <img src="assets/images/down-arrow 4.svg" alt="" />
@@ -60,11 +61,11 @@
                             <span>Georgian</span>
                         </a>
                         <a href="#">
-                            <img src="assets/images/flags/us.svg" alt="" />
+                            <img src="assets/images/flags/uk.svg" alt="" />
                             <span>English</span>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="convert">
@@ -235,6 +236,35 @@
                         <input type="number" name="" id="" placeholder="0" />
                     </div>
                     <!-- end currency input 5 -->
+
+                    <!-- currency input 6 -->
+                    <div class="currency-input">
+                        <div class="currency-picker dropdown">
+                            <button>
+                  <div>
+                    <img src="assets/images/flags/uk.svg" alt="" />
+                    GBP
+                  </div>
+                </button>
+
+                            <div class="currency-options dropdown-options">
+                                <button value="usd">
+                    <img src="assets/images/flags/us.svg" alt="" />
+                    usd
+                  </button>
+                                <button value="eur">
+                    <img src="assets/images/flags/eur.svg" alt="" />
+                    eur
+                  </button>
+                                <button value="gel">
+                    <img src="assets/images/flags/geo.svg" alt="" />
+                    gel
+                  </button>
+                            </div>
+                        </div>
+                        <input type="number" name="" id="" placeholder="0" />
+                    </div>
+                    <!-- end currency input 6 -->
                 </div>
 
                 <div class="flex space-between">
@@ -754,7 +784,7 @@
         <div class="container flex space-between">
             <ul class="flex gap fz-700 footer__nav" style="--gap: 2rem">
                 <li>
-                    <a href="#">Contact us</a>
+                    <a href="contactpage.html" target="_blank">Contact us</a>
                 </li>
                 <li>
                     <a href="#">Terms & Conditions</a>
@@ -846,123 +876,173 @@
                 <img src="./assets/images/close.svg" alt="Close Popup" onclick="closepopup('.popup-currency-selectors')">
             </div>
             <div class="currencies-container">
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                <label for="checkboxInput">
+                    <div class="currency-item" id="checkboxHover">
+                        <input id="checkboxInput" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover', '#hoverH4', '#hoverp', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hoverH4">USD</h4>
+                            </div>
+                            <p id="hoverp">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput1">
+                    <div class="currency-item" id="checkboxHover1">
+                        <input id="checkboxInput1" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover1', '#hover1H4', '#hoverp1',  this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover1H4">USD</h4>
+                            </div>
+                            <p id="hoverp1">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput2">
+                    <div class="currency-item" id="checkboxHover2">
+                        <input id="checkboxInput2" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover2', '#hover2H4', '#hoverp2', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover2H4">USD</h4>
+                            </div>
+                            <p id="hoverp2">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput3">
+                    <div class="currency-item" id="checkboxHover3" onclick="checked()">
+                        <input id="checkboxInput3" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover3','#hover3H4', '#hoverp3', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover3H4">USD</h4>
+                            </div>
+                            <p id="hoverp3">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput4">
+                    <div class="currency-item" id="checkboxHover4">
+                        <input id="checkboxInput4" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover4', '#hover4H4', '#hoverp4', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover4H4">USD</h4>
+                            </div>
+                            <p id="hoverp4">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput5">
+                    <div class="currency-item" id="checkboxHover5">
+                        <input id="checkboxInput5" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover5','#hover5H4', '#hoverp5', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover5H4">USD</h4>
+                            </div>
+                            <p id="hoverp5">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput6">
+                    <div class="currency-item" id="checkboxHover6">
+                        <input id="checkboxInput6" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover6','#hover6H4', '#hoverp6', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover6H4">USD</h4>
+                            </div>
+                            <p id="hoverp6">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput7">
+                    <div class="currency-item" id="checkboxHover7">
+                        <input id="checkboxInput7" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover7','#hover7H4', '#hoverp7', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover7H4">USD</h4>
+                            </div>
+                            <p id="hoverp7">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput8">
+                    <div class="currency-item" id="checkboxHover8">
+                        <input id="checkboxInput8" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover8', '#hover8H4', '#hoverp8', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover8H4">USD</h4>
+                            </div>
+                            <p id="hoverp8">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput9">
+                    <div class="currency-item" id="checkboxHover9">
+                        <input id="checkboxInput9" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover9','#hover9H4', '#hoverp9', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover9H4">USD</h4>
+                            </div>
+                            <p id="hover9H4">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
-                <div class="currency-item">
-                    <input type="checkbox">
-                    <div class="currency-main-container">
-                        <div class="flagname">
-                            <img src="./assets/images/flags/us.svg" alt="USD">
-                            <h4>USD</p>
+                </label>
+                <label for="checkboxInput10">
+                    <div class="currency-item" id="checkboxHover10">
+                        <input id="checkboxInput10" class="checkbox" type="checkbox" onChange="myFunction('#checkboxHover10','#hover10H4', '#hoverp10', this)">
+                        <div class="currency-main-container">
+                            <div class="flagname">
+                                <img src="./assets/images/flags/us.svg" alt="USD">
+                                <h4 id="hover10H4">USD</h4>
+                            </div>
+                            <p id="hoverp10">1 USD = 0.33 GEL</p>
                         </div>
-                        <p>1 USD = 0.33 GEL</p>
                     </div>
-                </div>
+                </label>
             </div>
             <div class="popup-footer">
                 <button class="new-button-currency-popup" onclick="closepopup('.popup-currency-selectors')">SAVE</button>
             </div>
         </div>
+        <!-- burger bar menu -->
+        <div class="burger-bar-menu-main">
+            <div class="burger-bar-menu-parent">
+                <div class="burger-bar-menu-header">
+                    <div class="burger-bar-menu-header-top">
+                        <a href="/" class="fz-800 burger-bar-menu-header-a">
+                            <img src="assets/images/money bag.svg" alt="Myvaluta Logo" /> Myvaluta
+                        </a>
+                        <div class="mobile-burgerbar-header-right-side">
+                            <ul class="languages-mobile">
+                                <li>
+                                    <a href="#" class="active">
+                                        <img id="enMobile" src="assets/images/flags/uk.svg" alt="English" />
+                                        <img id="geMobile" class="hidden-language-img" src="assets/images/flags/geo.svg" alt="Georgian">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#"><img onclick="closepopup('.burger-bar-menu-main')" src="assets/images/burger-bar.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/Line 37.svg" alt="border">
+                </div>
+                <a href="#">Crypto exchange rate</a>
+                <a href="#">Exchange Rate In Banks & Kiosks</a>
+                <a href="contactpage.html">Contact us</a>
+                <a href="#">Terms and conditions</a>
+            </div>
+        </div>
     </div>
-
+    <script src="./assets/js/languageswitcher.js"></script>
     <script src="./assets/js/popup.js"></script>
 </body>
 

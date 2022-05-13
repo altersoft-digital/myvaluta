@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header2">
+        <div class="container">
+        <div class="contact-header">
+            <div class="logo">
+                <a href="/" class="fz-800">
+                    <img src="assets/images/money bag.svg" alt="Myvaluta Logo" /> Myvaluta
+                </a>
+            </div>
+
+            <ul class="languages">
+                <li>
+                    <a href="#" class="active">
+                        <img id="en" src="assets/images/flags/uk.svg" alt="English" />
+                        <img id="ge" class="hidden-language-img" src="assets/images/flags/geo.svg" alt="Georgian">
+                    </a>
+                </li>
+            </ul>
+            <img id="burgerbar" onclick="openpopup('.burger-bar-menu-main')" class="burger-bar" src="assets/images/burger-bar.svg" alt="burger-bar">
+        </div>
+        </div>
+    </header>
+   <section class="terms-section1"></section>
+    <footer class="footer">
+        <div class="get-app">
+            <h2 class="heading-2">Get the mobile app</h2>
+
+            <div class="flex justify-center gap">
+                <a href="#">
+                    <img src="assets/images/app-store-and-google-play 1.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="assets/images/app-store-and-google-play 2.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="container flex space-between">
+            <ul class="flex gap fz-700 footer__nav" style="--gap: 2rem">
+                <li>
+                    <a href="contactpage.html" target="_blank">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+
+            <ul class="flex gap" style="--gap: 1.5rem">
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/facebook 1.svg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/twitter-sign 1.svg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/linkedin 1.svg" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bg-overlay">
+        <div class="burger-bar-menu-main">
+            <div class="burger-bar-menu-parent">
+                <div class="burger-bar-menu-header">
+                    <div class="burger-bar-menu-header-top">
+                        <a href="/" class="fz-800 burger-bar-menu-header-a">
+                            <img src="assets/images/money bag.svg" alt="Myvaluta Logo" /> Myvaluta
+                        </a>
+                        <div class="mobile-burgerbar-header-right-side">
+                            <ul class="languages-mobile">
+                                <li>
+                                    <a href="#" class="active">
+                                        <img id="enMobile" src="assets/images/flags/uk.svg" alt="English" />
+                                        <img id="geMobile" class="hidden-language-img" src="assets/images/flags/geo.svg" alt="Georgian">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#"><img onclick="closepopup('.burger-bar-menu-main')" src="assets/images/burger-bar.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/Line 37.svg" alt="border">
+                </div>
+                <a href="#">Crypto exchange rate</a>
+                <a href="#">Exchange Rate In Banks & Kiosks</a>
+                <a href="contactpage.html">Contact us</a>
+                <a href="#">Terms and conditions</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/languageswitcher.js"></script>
+    <script src="assets/js/popup.js"></script>
+</body>
+</html>

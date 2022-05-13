@@ -1221,12 +1221,20 @@ textarea{
         justify-items: center;
     }
 }
+/* HIDE TABLE CONTENT ON MOBILE */
+@media (max-width: 680px){
+    .hidemobile{
+        display: none;
+    }
+    table{
+        gap: 3px;
+    }
+}
 /* MARIAM'S CSS CODE END */
 .currency-main-container {
     display: grid;
     grid-gap: 12px;
 }
-
 .flagname h4 {
     font-family: 'Roboto';
     font-style: normal;
@@ -1236,12 +1244,10 @@ textarea{
     /* #263E33 */
     color: #263E33;
 }
-
 .flagname img {
     width: 28px;
     height: 28px;
 }
-
 .currency-main-container p {
     font-family: 'Roboto';
     font-style: normal;
@@ -1251,19 +1257,16 @@ textarea{
     /* identical to box height */
     color: #65756E;
 }
-
 .currencies-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 24px;
 }
-
 @media only screen and (max-width: 1439px) {
     .currencies-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
 @media only screen and (max-width: 1130px) {
     .currencies-container {
         grid-template-columns: repeat(3, 1fr);
@@ -1272,7 +1275,6 @@ textarea{
         margin: 52px 24px 0 24px;
     }
 }
-
 @media only screen and (max-width: 880px) {
     .currencies-container {
         grid-template-columns: repeat(2, 1fr);

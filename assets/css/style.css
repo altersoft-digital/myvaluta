@@ -1190,7 +1190,8 @@ textarea{
     resize: none;
 }
 #sendMsg{
-    background: #263E33;
+    background: #5B9279;
+    border: none;
     border-radius: 8px;
     padding: 20px;
     /* fonts */

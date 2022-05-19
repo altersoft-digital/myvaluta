@@ -15,12 +15,7 @@ function sharepopup(popup){
     document.querySelector('.bg-overlay').style.display ='block';
     document.querySelector('.bg-overlay').style.background = 'none';
 }
-// Select element with box class, assign to box variable
-// const share = document.querySelector(".share-popup")
-// document.addEventListener("click", function(event) {
-//   if (event.target.closest(".share-popup") && !event.target) return
-//   share.style.display = 'none';
-// })
+
 
 /*
 ესეც არის ერთი ვარიანთი შეარის სექციის მართვისთვის

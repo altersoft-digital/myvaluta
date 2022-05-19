@@ -1155,9 +1155,6 @@ p {
     color: #3A4B5A;
 }
 /* SHARE POPUP */
-.hidden{
-    display: none;
-}
 .share-popup{
     display: none;
     position: absolute;
@@ -1167,9 +1164,25 @@ p {
     box-shadow: 2px 4px 44px -3.91691px rgba(3, 17, 67, 0.15);
     border-radius: 6.8546px;
     display: flex;
-    /* flex-direction: column; */
-    gap: 16px;
+    flex-direction: column;
     padding: 24px 25px 32px 24px;
+}
+.share-popup-header{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.closing-share-popup{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: rgba(58, 75, 90, 0.05);
+    border-radius: 8px;
+    padding: 11px;
+}
+.closing-share-popup img{
+    cursor: pointer;
 }
 .share-popup-elemenets-parent{
     display: flex;

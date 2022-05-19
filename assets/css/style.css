@@ -640,6 +640,7 @@ p {
 .exchange-table th:first-child,
 .exchange-table td:first-child {
     padding-left: 32px;
+    position: sticky;
 }
 @media (max-width: 560px) {
     .exchange-table th:first-child,
@@ -1456,15 +1457,6 @@ textarea{
         grid-auto-flow: row;
         align-items: center;
         justify-items: center;
-    }
-}
-/* HIDE TABLE CONTENT ON MOBILE */
-@media (max-width: 680px){
-    .hidemobile{
-        display: none;
-    }
-    table{
-        gap: 3px;
     }
 }
 /* terms and condition page */

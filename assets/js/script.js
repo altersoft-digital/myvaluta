@@ -46,7 +46,7 @@
     })
   }
 
-  function currencyDropdown() {
+/*  function currencyDropdown() {
     if (!document.querySelector('.dropdown')) return
 
     const dropdowns = document.querySelectorAll('.dropdown')
@@ -74,7 +74,7 @@
       })
     })
   }
-
+*/
   // show more of table content
   function showMore() {
     if (!document.querySelector('.show-more')) return
@@ -106,7 +106,7 @@
   }
 
   filterDropdown()
-  currencyDropdown()
+  // currencyDropdown()
   showMore()
   datepicker()
 })()

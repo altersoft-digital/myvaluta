@@ -35,11 +35,9 @@ function scrollDown(table){
     document.querySelector(table).style.display = 'block';
     document.querySelector('.bank-arrow-down').style.display = 'none';
     document.querySelector('.bank-arrow-up').style.display ='block';
-    document.querySelector('.divider').style.display = 'block';
 }
 function scrollUp(table){
     document.querySelector(table).style.display = 'none';
     document.querySelector('.bank-arrow-down').style.display = 'block';
     document.querySelector('.bank-arrow-up').style.display ='none';
-    document.querySelector('.divider').style.display = 'none';
 }

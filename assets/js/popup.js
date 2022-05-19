@@ -13,7 +13,7 @@ function closepopup(popup) {
 function sharepopup(popup){
     document.querySelector(popup).style.display = 'block';
     document.querySelector('.bg-overlay').style.display ='block';
-    document.querySelector('.bg-overlay').style.background = 'none';
+    // document.querySelector('.bg-overlay').style.background = 'none';
 }
 
 

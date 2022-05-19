@@ -13,30 +13,12 @@ function closepopup(popup) {
 function sharepopup(popup){
     document.querySelector(popup).style.display = 'block';
     document.querySelector('.bg-overlay').style.display ='block';
-    // document.querySelector('.bg-overlay').style.background = 'none';
+    document.querySelector('.bg-overlay').style.background = 'none';
 }
-
-
-/*
-ესეც არის ერთი ვარიანთი შეარის სექციის მართვისთვის
-let isVisible = true;
-document.querySelector('#shareA').addEventListener('click', function(){
-	let div = document.querySelector('.share-popup');
-  if (isVisible){
-  	div.classList.add('hidden');
-    isVisible = false;
-  } else {
-  	div.classList.remove('hidden');
-    isVisible = true;
-  }
-});
-*/
-
 // checkbox hovers
-
 function myFunction(x, b, c, _this) {
     if (_this.checked) {
-        document.querySelector(x).style.backgroundColor = '#5B9279';
+        document.querySelector(x).style.backgroundColor = '#00A8E8';
         document.querySelector(b).style.color = '#ffffff';
         document.querySelector(c).style.color = '#ffffff';
     } else  {

@@ -931,6 +931,14 @@ p {
     background-color: #F4F5F4;
     border-radius: 7px;
 }
+.currency-item.checked{
+    background: #00A8E8;
+    color: white;
+}
+.currency-item input {
+    width: 24px;
+    height: 24px;
+}
 /* ------------------------------------  NEW VERSION OF CSS CODE WRITTEN HERE ------------------------------------ */
 /*  main-page */
 .section{
@@ -1018,14 +1026,7 @@ p {
     align-self: flex-end;
     cursor: pointer;
 }
-.currency-item.checked{
-    background: #00A8E8;
-    color: white;
-}
-.currency-item input {
-    width: 24px;
-    height: 24px;
-}
+
 .converter-parent{
     align-self: flex-start;
     position: absolute;

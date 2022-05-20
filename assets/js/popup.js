@@ -31,13 +31,13 @@ function myFunction(x, b, c, _this) {
 
 // bank exchange rate scrolldown & scroll up menu
 
-function scrollDown(table){
+function scrollDown(table, arrowdown, arrowup){
     document.querySelector(table).style.display = 'block';
-    document.querySelector('.bank-arrow-down').style.display = 'none';
-    document.querySelector('.bank-arrow-up').style.display ='block';
+    document.querySelector(arrowdown).style.display = 'none';
+    document.querySelector(arrowup).style.display ='block';
 }
-function scrollUp(table){
+function scrollUp(table, arrowdown, arrowup){
     document.querySelector(table).style.display = 'none';
-    document.querySelector('.bank-arrow-down').style.display = 'block';
-    document.querySelector('.bank-arrow-up').style.display ='none';
+    document.querySelector(arrowdown).style.display = 'block';
+    document.querySelector(arrowup).style.display ='none';
 }

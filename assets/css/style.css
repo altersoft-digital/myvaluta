@@ -596,6 +596,9 @@ p {
     /* Handle */
     /* Handle on hover */
 }
+.currency-sticky{
+    position: sticky;
+}
 .exchange-table.active {
     max-height: 1000px;
 }

@@ -285,7 +285,7 @@
                             </thead>
 
                             <tbody>
-                                <tr>
+                                <tr class="currency-sticky">
                                     <td>
                                         <div class="flex gap" style="--gap: 0.5rem">
                                             <div>
@@ -298,9 +298,9 @@
                                     <td>3.0841</td>
                                     <td class="flex gap"><img src="assets/images/green-arrow-up.svg" alt="Exchange Rate Increased"> 0.086</td>
                                     <td>
-                                        <div>
+                                        <!-- <div> -->
                                             <img src="assets/images/Vector 2.svg" alt="" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -316,9 +316,9 @@
                                     <td>3.0841</td>
                                     <td class="flex gap"><img src="assets/images/red-arrow-down.svg" alt="Exchange Rate Decreased">0.086</td>
                                     <td>
-                                        <div>
+                                        <!-- <div> -->
                                             <img src="assets/images/Exchange-rate-decreased.svg" alt="Exchange Rate Amplitude" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -334,9 +334,9 @@
                                     <td>3.0841</td>
                                     <td class="flex gap"><img src="assets/images/red-arrow-down.svg" alt="Exchange Rate decreased"> 0.086</td>
                                     <td>
-                                        <div>
+                                        <!-- <div> -->
                                             <img src="assets/images/Exchange-rate-decreased.svg" alt="Exchange Rate Amplitude" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -352,9 +352,9 @@
                                     <td>3.0841</td>
                                     <td class="flex gap"><img src="assets/images/green-arrow-up.svg" alt="Exchange Rate Increased">0.086</td>
                                     <td>
-                                        <div>
+                                        <!-- <div> -->
                                             <img src="assets/images/Vector 2.svg" alt="" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -368,11 +368,11 @@
                                     </td>
                                     <td>1 US Dollar</td>
                                     <td>3.0841</td>
-                                    <td>0.086</td>
+                                    <td class="flex gap"><img src="assets/images/green-arrow-up.svg" alt="Exchange Rate Increased">0.086</td>
                                     <td>
-                                        <div>
+                                        <!-- <div> -->
                                             <img src="assets/images/Vector 2.svg" alt="" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -386,20 +386,20 @@
                                     </td>
                                     <td>1 US Dollar</td>
                                     <td>3.0841</td>
-                                    <td>0.086</td>
-                                    <td">
-                                        <div>
+                                    <td class="flex gap"><img src="assets/images/green-arrow-up.svg" alt="Exchange Rate Increased">0.086</td>
+                                    <td>
+                                        <!-- <div> -->
                                             <img src="assets/images/Vector 2.svg" alt="" />
-                                        </div>
+                                        <!-- </div> -->
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <button class="show-more">
-              <img src="assets/images/down-arrow 3.svg" alt="" />
+              <img src="assets/images/Down_Arrow_3.svg" alt="" />
             </button>
-            <p class="text-accent2">Last updated Apr 15, 2022, 12:55</p>
+            <p class="text-accent2" style="margin-top: 10px;">Last updated Apr 15, 2022, 12:55</p>
                 </div>
             </div>
             <!-- second bank exchanges rate -->
@@ -823,6 +823,7 @@
                         <p onclick="seeMore()">View more</p>
                     </div>
                 </div>
+                <!-- Third Exchanges in Kiosk -->
             <div class="exchange active exchange-rate-parent" data-tab-content id="fiat">
                 <header class="exchange__header flex space-between bank-kiosk-header">
                     <h2 class="heading-2">Exchange rate in kiosks</h2>
@@ -1295,6 +1296,7 @@
                     <canvas id="lineChart"></canvas>
                 </div>
             </section>
+            <!-- Crypto currency -->
             <div class="tab-content">
                 <!-- first div of official exchanges -->
                 <div class="exchange active" data-tab-content id="fiat">
@@ -1409,7 +1411,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer-container container">
             <div class="footer-main container">

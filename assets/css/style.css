@@ -810,7 +810,8 @@ p {
 .footer-lower-a-div{
     display: flex;
     align-items: center;
-    gap: 32px;
+    justify-content: space-between;
+    gap: 32px !important;
 }
 .authorise{
     display: none;

@@ -224,6 +224,9 @@ p {
     }
 }
 /* header */
+/* header{
+    overflow-x: hidden;
+} */
 .header {
     width: 100%;
     position: relative;

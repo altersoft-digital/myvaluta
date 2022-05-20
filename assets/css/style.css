@@ -183,7 +183,7 @@ p {
 .heading-2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--clr-theme-dark);
+    color: #3A4B5A;
 }
 .exchange {
     margin-bottom: 32px;
@@ -967,7 +967,7 @@ p {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
 }
 .banks-row{
      display: flex;

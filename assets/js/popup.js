@@ -41,3 +41,19 @@ function scrollUp(table, arrowdown, arrowup){
     document.querySelector(arrowdown).style.display = 'block';
     document.querySelector(arrowup).style.display ='none';
 }
+
+// view more banks and kiosk options 
+function viewMore1() {
+    var count;
+    for(count=1;count<6;count++)
+    {
+        document.getElementById('row-'+count+'').style.display = 'block';
+    }
+};
+function viewMore2() {
+    var count;
+    for(count=1;count<6;count++)
+    {
+        document.getElementById('row-'+count+'').style.display = 'block';
+    }
+};

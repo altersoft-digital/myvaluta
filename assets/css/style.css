@@ -1038,7 +1038,7 @@ p {
 .bank-arrow-up1, .bank-arrow-up2, .bank-arrow-up3, .bank-arrow-up4, .bank-arrow-up5, .bank-arrow-up6, .bank-arrow-up7, .bank-arrow-up8, .bank-arrow-up9, .bank-arrow-up10, .bank-arrow-up11, .bank-arrow-up12{
     display: none;
 }
-.banks-table p{
+.banks-table a{
     text-decoration: underline;
     font-family: 'DejaVu Sans';
     font-style: normal;

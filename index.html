@@ -409,7 +409,7 @@
                         <h2 class="heading-2">Exchange rate in banks</h2>
                     </header>
                     <div class="banks-table">
-                        <div class="banks-row">
+                        <div class="banks-row" id="row-1">
                             <div class="bank">
                                 <header>
                                     <img class="bank-logo" src="assets/images/TBC.svg" alt="TBC">
@@ -615,7 +615,7 @@
                                 </table>
                             </div>
                         </div>
-                         <div class="banks-row">
+                         <div class="banks-row" id="row-2">
                             <div class="bank">
                                 <header>
                                     <img class="bank-logo" src="assets/images/VTB.svg" alt="VTB">
@@ -821,7 +821,213 @@
                                 </table>
                             </div>
                         </div>
-                        <p onclick="seeMore()">View more</p>
+                        <div class="banks-row" style="display:none;" id="row-3">
+                            <div class="bank">
+                                <header>
+                                    <img class="bank-logo" src="assets/images/VTB.svg" alt="VTB">
+                                    <img onclick="scrollDown('.table4','.bank-arrow-down4', '.bank-arrow-up4')" class="bank-arrow-down4" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                    <img onclick="scrollUp('.table4', '.bank-arrow-down4', '.bank-arrow-up4')" class="bank-arrow-up4" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                                </header>
+                                <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                                <table class="table4">
+                                    <thead>
+                                        <tr>
+                                            <th>Currency</th>
+                                            <th>buy</th>
+                                            <th>Sell</th>
+                                        </tr>
+                                    </thead>
+        
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/us.svg" alt="" />
+                                                    </div>
+                                                    USD
+                                                </div>
+                                            </td>
+                                            <td>1 US Dollar</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/eur.svg" alt="" />
+                                                    </div>
+                                                    EUR
+                                                </div>
+                                            </td>
+                                            <td>1 Euro</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/rus.svg" alt="" />
+                                                    </div>
+                                                    RUB
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                    </div>
+                                                    CHF
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bank">
+                                <header>
+                                    <img class="bank-logo" src="assets/images/procreditBank.svg" alt="ProcreditBank">
+                                    <img onclick="scrollDown('.table5', '.bank-arrow-down5', '.bank-arrow-up5')" class="bank-arrow-down5" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                    <img onclick="scrollUp('.table5')" class="bank-arrow-up5" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                                </header>
+                                <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                                <table class="table5">
+                                    <thead>
+                                        <tr>
+                                            <th>Currency</th>
+                                            <th>buy</th>
+                                            <th>Sell</th>
+                                        </tr>
+                                    </thead>
+        
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/us.svg" alt="" />
+                                                    </div>
+                                                    USD
+                                                </div>
+                                            </td>
+                                            <td>1 US Dollar</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/eur.svg" alt="" />
+                                                    </div>
+                                                    EUR
+                                                </div>
+                                            </td>
+                                            <td>1 Euro</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/rus.svg" alt="" />
+                                                    </div>
+                                                    RUB
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                    </div>
+                                                    CHF
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bank">
+                                <header>
+                                    <img class="bank-logo" src="assets/images/BankOfGergiaLogo 1.svg" alt="BOG">
+                                    <img onclick="scrollDown('.table6','.bank-arrow-down6', '.bank-arrow-up6')" class="bank-arrow-down6" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                    <img onclick="scrollUp('.table6', '.bank-arrow-down6', '.bank-arrow-up6')" class="bank-arrow-up6" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                                </header>
+                                <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                                <table class="table6">
+                                    <thead>
+                                        <tr>
+                                            <th>Currency</th>
+                                            <th>buy</th>
+                                            <th>Sell</th>
+                                        </tr>
+                                    </thead>
+        
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/us.svg" alt="" />
+                                                    </div>
+                                                    USD
+                                                </div>
+                                            </td>
+                                            <td>1 US Dollar</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/eur.svg" alt="" />
+                                                    </div>
+                                                    EUR
+                                                </div>
+                                            </td>
+                                            <td>1 Euro</td>
+                                            <td>3.0841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/rus.svg" alt="" />
+                                                    </div>
+                                                    RUB
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="flex gap" style="--gap: 0.5rem">
+                                                    <div>
+                                                        <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                    </div>
+                                                    CHF
+                                                </div>
+                                            </td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                            <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <a class="view-more" onclick="viewMore1()">View more</a>
                     </div>
                 </div>
                 <!-- Third Exchanges in Kiosk -->
@@ -830,7 +1036,7 @@
                     <h2 class="heading-2">Exchange rate in kiosks</h2>
                 </header>
                 <div class="banks-table">
-                    <div class="banks-row">
+                    <div class="banks-row" id="row-4">
                         <div class="bank">
                             <header>
                                 <img class="bank-logo" src="assets/images/RcoCredit.svg" alt="RicoCredit">
@@ -1036,7 +1242,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="banks-row">
+                    <div class="banks-row" id="row-5">
                         <div class="bank">
                             <header>
                                 <img class="bank-logo" src="assets/images/VTB.svg" alt="VTB">
@@ -1242,7 +1448,213 @@
                             </table>
                         </div>
                     </div>
-                    <p onclick="seeMore()">View more</p>
+                    <div class="banks-row" style="display:none;" id="row-6">
+                        <div class="bank">
+                            <header>
+                                <img class="bank-logo" src="assets/images/VTB.svg" alt="VTB">
+                                <img onclick="scrollDown('.VTB-table', '.bank-arrow-down10','.bank-arrow-up10' )" class="bank-arrow-down10" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                <img onclick="scrollUp('.VTB-table', '.bank-arrow-down10','.bank-arrow-up10' )" class="bank-arrow-up10" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                            </header>
+                            <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                            <table class="VTB-table">
+                                <thead>
+                                    <tr>
+                                        <th>Currency</th>
+                                        <th>buy</th>
+                                        <th>Sell</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/us.svg" alt="" />
+                                                </div>
+                                                USD
+                                            </div>
+                                        </td>
+                                        <td>1 US Dollar</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/eur.svg" alt="" />
+                                                </div>
+                                                EUR
+                                            </div>
+                                        </td>
+                                        <td>1 Euro</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/rus.svg" alt="" />
+                                                </div>
+                                                RUB
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                </div>
+                                                CHF
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bank">
+                            <header>
+                                <img class="bank-logo" src="assets/images/procreditBank.svg" alt="ProcreditBank">
+                                <img onclick="scrollDown('.procredit-Table', '.bank-arrow-down11', '.bank-arrow-up11')" class="bank-arrow-down11" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                <img onclick="scrollUp('.procredit-Table', '.bank-arrow-down11', '.bank-arrow-up11')" class="bank-arrow-up11" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                            </header>
+                            <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                            <table class="procredit-Table">
+                                <thead>
+                                    <tr>
+                                        <th>Currency</th>
+                                        <th>buy</th>
+                                        <th>Sell</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/us.svg" alt="" />
+                                                </div>
+                                                USD
+                                            </div>
+                                        </td>
+                                        <td>1 US Dollar</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/eur.svg" alt="" />
+                                                </div>
+                                                EUR
+                                            </div>
+                                        </td>
+                                        <td>1 Euro</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/rus.svg" alt="" />
+                                                </div>
+                                                RUB
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                </div>
+                                                CHF
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bank">
+                            <header>
+                                <img class="bank-logo" src="assets/images/BankOfGergiaLogo 1.svg" alt="BOG">
+                                <img onclick="scrollDown('.BOG-table', '.bank-arrow-down12', '.bank-arrow-up12')" class="bank-arrow-down12" src="assets/images/Down_Arrow_3.svg" alt="Scroll Down">
+                                <img onclick="scrollUp('.BOG-table','.bank-arrow-down12', '.bank-arrow-up12')" class="bank-arrow-up12" src="assets/images/Up_Arrow_3.svg" alt="Scroll up">
+                            </header>
+                            <img class="divider" src="assets/images/Line 3.svg" alt="divider">
+                            <table class="BOG-table">
+                                <thead>
+                                    <tr>
+                                        <th>Currency</th>
+                                        <th>buy</th>
+                                        <th>Sell</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/us.svg" alt="" />
+                                                </div>
+                                                USD
+                                            </div>
+                                        </td>
+                                        <td>1 US Dollar</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/eur.svg" alt="" />
+                                                </div>
+                                                EUR
+                                            </div>
+                                        </td>
+                                        <td>1 Euro</td>
+                                        <td>3.0841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/rus.svg" alt="" />
+                                                </div>
+                                                RUB
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex gap" style="--gap: 0.5rem">
+                                                <div>
+                                                    <img src="assets/images/flags/switzerland.svg" alt="Swiss" />
+                                                </div>
+                                                CHF
+                                            </div>
+                                        </td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                        <td><img src="assets/images/Line.svg" alt="N/A"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a class="view-more" onclick="viewMore2()">View more</a>
                 </div>
             </div>
             <!-- here canvas -->

@@ -1023,11 +1023,12 @@ p {
     border-spacing: 20px 15px;
     box-sizing: border-box;
 }
-.bank-arrow-down, .bank-arrow-up{
+.bank-arrow-down1, .bank-arrow-down2, .bank-arrow-down3, .bank-arrow-down4, .bank-arrow-down5, .bank-arrow-down6, .bank-arrow-down7, .bank-arrow-down8, .bank-arrow-down9, .bank-arrow-down10, .bank-arrow-down11, .bank-arrow-down12,
+.bank-arrow-up1, .bank-arrow-up2, .bank-arrow-up3, .bank-arrow-up4, .bank-arrow-up5, .bank-arrow-up6, .bank-arrow-up7, .bank-arrow-up8, .bank-arrow-up9, .bank-arrow-up10, .bank-arrow-up11, .bank-arrow-up12{
     cursor: pointer;
 }
 
-.bank-arrow-up, .bank-arrow-up2, .bank-arrow-up3, .bank-arrow-up4, .bank-arrow-up5, .bank-arrow-up6, .bank-arrow-up7, .bank-arrow-up8, .bank-arrow-up9, .bank-arrow-up10, .bank-arrow-up11, .bank-arrow-up12{
+.bank-arrow-up1, .bank-arrow-up2, .bank-arrow-up3, .bank-arrow-up4, .bank-arrow-up5, .bank-arrow-up6, .bank-arrow-up7, .bank-arrow-up8, .bank-arrow-up9, .bank-arrow-up10, .bank-arrow-up11, .bank-arrow-up12{
     display: none;
 }
 .banks-table p{

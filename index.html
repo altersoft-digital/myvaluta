@@ -1451,7 +1451,7 @@
                     <h3>Subscribe</h3>
                     <p>Subscribe to get the latest currency rates</p>
                     <div class="subscribe-div">
-                        <input id="emailsubscribe" type="email" placeholder="  Your Email" size="30">
+                        <input id="emailsubscribe" type="email" placeholder="  Your Email" size="55">
                         <button>Subscribe</button>
                     </div>
                 </div>
@@ -1472,15 +1472,15 @@
         const ctx = document.getElementById('lineChart').getContext('2d')
 
         const DATA_COUNT = 7
-        const labels = ['ორშ', 'სამშ', 'ოთხშ', 'ხუთშ', 'პარ', 'შაბათი', 'კვირა']
-        const datapoints = [2, 3, 3, 3.5, 3, 2, 2]
+        const labels = ['7 Apr', '8 Apr', '9 Apr', '10 Apr', '11 Apr', '12 Apr', '13 Apr', '14 Apr', '15 Apr', '16 Apr', '17 Apr', '18 Apr', '19 Apr', '20 Apr', '21 Apr']
+        const datapoints = [2, 2.3, 2.45, 2.6, 2.8,3.3, 3.45, 3.4, 3, 3.2, 3, 2.85, 3.3, 3.48, 4]
         const data = {
             labels: labels,
             datasets: [{
                 label: 'USD',
                 data: datapoints,
-                borderColor: '#459216',
-                background: 'linear-gradient(180deg, rgba(0, 89, 255, 0.2) 0%, rgba(0, 89, 255, 0.06) 100%);',
+                borderColor: '#80BFD3',
+                background: 'linear-gradient(180deg, rgba(0, 89, 255, 0.162) 0%, rgba(0, 89, 255, 0.026) 100%);',
                 fill: true,
                 cubicInterpolationMode: 'monotone',
                 tension: 10,
@@ -1494,7 +1494,7 @@
                 responsive: true,
                 plugins: {
                     title: {
-                        display: false,
+                        display: true,
                     },
                     legend: {
                         display: false,

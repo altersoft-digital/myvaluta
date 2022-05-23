@@ -1,112 +1,112 @@
-;(() => {
-  const tabs = document.querySelectorAll('[data-tab-target]')
-  const tabContents = document.querySelectorAll('[data-tab-content]')
+(() => {
+    const tabs = document.querySelectorAll('[data-tab-target]')
+    const tabContents = document.querySelectorAll('[data-tab-content]')
 
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const target = document.querySelector(tab.dataset.tabTarget)
-      tabContents.forEach((tabContent) => {
-        tabContent.classList.remove('active')
-      })
-      tabs.forEach((tab) => {
-        tab.classList.remove('active')
-      })
-      tab.classList.add('active')
-      target.classList.add('active')
-    })
-  })
-
-  // filter dropdown
-  function filterDropdown() {
-    if (!document.querySelector('.filter-dropdown')) return
-
-    const dropdowns = document.querySelectorAll('.filter-dropdown')
-
-    dropdowns.forEach((dropdown) => {
-      const trigger = dropdown.querySelector('[dropdown-trigger]')
-      const options = dropdown.querySelectorAll('.filter-options button')
-
-      trigger.addEventListener('click', () => {
-        dropdown.classList.toggle('active')
-      })
-
-      options.forEach((option) => {
-        option.addEventListener('click', () => {
-          // update filter button chosen option
-          const optionInnerContent = option.innerHTML
-          trigger.querySelector('div').innerHTML = optionInnerContent
-
-          // close dropdown
-          dropdown.classList.remove('active')
-
-          // submit api call from here
-          console.log(option.value)
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach((tabContent) => {
+                tabContent.classList.remove('active')
+            })
+            tabs.forEach((tab) => {
+                tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('active')
         })
-      })
     })
-  }
 
-/*  function currencyDropdown() {
-    if (!document.querySelector('.dropdown')) return
+    // filter dropdown
+    function filterDropdown() {
+        if (!document.querySelector('.filter-dropdown')) return
 
-    const dropdowns = document.querySelectorAll('.dropdown')
+        const dropdowns = document.querySelectorAll('.filter-dropdown')
 
-    dropdowns.forEach((dropdown) => {
-      const trigger = dropdown.querySelector('[dropdown-trigger]')
-      const options = dropdown.querySelectorAll('.dropdown-options button')
+        dropdowns.forEach((dropdown) => {
+            const trigger = dropdown.querySelector('[dropdown-trigger]')
+            const options = dropdown.querySelectorAll('.filter-options button')
 
-      trigger.addEventListener('click', () => {
-        dropdown.classList.toggle('active')
-      })
+            trigger.addEventListener('click', () => {
+                dropdown.classList.toggle('active')
+            })
 
-      options.forEach((option) => {
-        option.addEventListener('click', () => {
-          // update filter button chosen option
-          const optionInnerContent = option.innerHTML
-          trigger.querySelector('div').innerHTML = optionInnerContent
+            options.forEach((option) => {
+                option.addEventListener('click', () => {
+                    // update filter button chosen option
+                    const optionInnerContent = option.innerHTML
+                    trigger.querySelector('div').innerHTML = optionInnerContent
 
-          // close dropdown
-          dropdown.classList.remove('active')
+                    // close dropdown
+                    dropdown.classList.remove('active')
 
-          // submit api call from here
-          console.log(option.value)
+                    // submit api call from here
+                    console.log(option.value)
+                })
+            })
         })
-      })
-    })
-  }
-*/
-  // show more of table content
-  function showMore() {
-    if (!document.querySelector('.show-more')) return
+    }
 
-    const btns = document.querySelectorAll('.show-more')
+    /*  function currencyDropdown() {
+        if (!document.querySelector('.dropdown')) return
 
-    btns.forEach((btn) => {
-      const table = btn.closest('.exchange').querySelector('.exchange-table')
-      btn.addEventListener('click', () => {
-        table.classList.toggle('active')
-      })
-    })
-  }
+        const dropdowns = document.querySelectorAll('.dropdown')
 
-  // datepicker
-  function datepicker() {
-    if (!document.querySelector('.filter-by-date')) return
+        dropdowns.forEach((dropdown) => {
+          const trigger = dropdown.querySelector('[dropdown-trigger]')
+          const options = dropdown.querySelectorAll('.dropdown-options button')
 
-    const datefilters = document.querySelectorAll('.filter-by-date')
-    datefilters.forEach((filter) => {
-      const input = filter.querySelector('input')
-      const chosenDate = filter.querySelector('button span')
+          trigger.addEventListener('click', () => {
+            dropdown.classList.toggle('active')
+          })
 
-      input.addEventListener('change', () => {
-        const inputValue = input.value
-        chosenDate.innerHTML = inputValue
-      })
-    })
-  }
+          options.forEach((option) => {
+            option.addEventListener('click', () => {
+              // update filter button chosen option
+              const optionInnerContent = option.innerHTML
+              trigger.querySelector('div').innerHTML = optionInnerContent
 
-  filterDropdown()
-  // currencyDropdown()
-  showMore()
-  datepicker()
+              // close dropdown
+              dropdown.classList.remove('active')
+
+              // submit api call from here
+              console.log(option.value)
+            })
+          })
+        })
+      }
+    */
+    // show more of table content
+    function showMore() {
+        if (!document.querySelector('.show-more')) return
+
+        const btns = document.querySelectorAll('.show-more')
+
+        btns.forEach((btn) => {
+            const table = btn.closest('.exchange').querySelector('.exchange-table')
+            btn.addEventListener('click', () => {
+                table.classList.toggle('active')
+            })
+        })
+    }
+
+    // datepicker
+    function datepicker() {
+        if (!document.querySelector('.filter-by-date')) return
+
+        const datefilters = document.querySelectorAll('.filter-by-date')
+        datefilters.forEach((filter) => {
+            const input = filter.querySelector('input')
+            const chosenDate = filter.querySelector('button span')
+
+            input.addEventListener('change', () => {
+                const inputValue = input.value
+                chosenDate.innerHTML = inputValue
+            })
+        })
+    }
+
+    filterDropdown()
+        // currencyDropdown()
+    showMore()
+    datepicker()
 })()

@@ -269,7 +269,7 @@ p {
 
 .dynamics {
     padding: 24px 32px;
-    background: var(--clr-theme-trans);
+    background: #fff;
 }
 
 @media (max-width: 560px) {
@@ -799,7 +799,7 @@ p {
 }
 
 .exchange-table td {
-    font-size: 0.875rem;
+    font-size: 16px;
     color: var(--clr-theme-dark);
     padding-block: 28px;
 }
@@ -1183,6 +1183,7 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    align-items: flex-start;
 }
 
 @media(max-width: 1069px) {
@@ -1235,7 +1236,6 @@ p {
 .bank table {
     width: 100%;
     display: none;
-    border-spacing: 20px 15px;
     box-sizing: border-box;
 }
 
@@ -2031,4 +2031,31 @@ textarea {
     #headingtabs {
         display: block;
     }
+}
+
+.currenciestable th {
+    text-align: start;
+}
+
+.currenciestable td {
+    border-spacing: 12px 0;
+    padding: 12px 0;
+}
+
+.currenciestable tbody {
+    font-size: 14px;
+    color: #3A4B5A;
+}
+
+.small-height {
+    height: 88px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.small-height img {
+    width: 10px;
+    height: auto;
 }

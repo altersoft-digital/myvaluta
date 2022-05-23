@@ -33,7 +33,7 @@ function myFunction(x, b, c, _this) {
 // bank exchange rate scrolldown & scroll up menu
 
 function scrollDown(table, arrowdown, arrowup) {
-    document.querySelector(table).style.display = 'block';
+    document.querySelector(table).style.display = 'table';
     document.querySelector(arrowdown).style.display = 'none';
     document.querySelector(arrowup).style.display = 'block';
 }

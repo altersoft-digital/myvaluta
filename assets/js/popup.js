@@ -29,7 +29,18 @@ function myFunction(x, b, c, _this) {
     }
 }
 
+function bgoverlay_click() {
+    document.querySelector('.popup-currency-selectors').style.display = 'none';
+    document.querySelector('.burger-bar-menu-main').style.display = 'none';
+    document.querySelector('.share-popup').style.display = 'none';
+    document.querySelector('.bg-overlay').style.display = 'none';
+    document.querySelector('body').style.overflowY = 'unset';
+}
 
+$(".bg-overlay div").click(function(e) {
+    // Do something
+    e.stopPropagation();
+});
 // bank exchange rate scrolldown & scroll up menu
 
 function scrollDown(table, arrowdown, arrowup) {

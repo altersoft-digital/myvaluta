@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" defer></script>
 </head>
 
@@ -1912,7 +1913,7 @@
         </div>
     </footer>
 
-    <div class="bg-overlay">
+    <div class="bg-overlay" onclick="bgoverlay_click()">
         <div class="popup-currency-selectors">
             <div class="popup-header">
                 <h2>Choose Currencies</h2>
@@ -2122,8 +2123,8 @@
     <script src="./assets/js/popup.js"></script>
     <script>
         const ctx = document.getElementById('lineChart').getContext('2d')
-        var gradient = ctx.createLinearGradient(0, 0, 0, 400);
-        gradient.addColorStop(0, 'rgba(0,89,255,0.7)');
+        var gradient = ctx.createLinearGradient(0, 0, 0, 600);
+        gradient.addColorStop(0, 'rgba(0,89,255,0.5)');
         gradient.addColorStop(1, 'rgba(0,89,255,0)');
 
         const DATA_COUNT = 7
@@ -2134,14 +2135,13 @@
             datasets: [{
                 label: 'USD',
                 data: datapoints,
-                borderColor: '#80BFD3',
-                backgroundColor: '#80BFD344',
+                borderColor: '#0059FF',
                 backgroundColor: gradient, // Put the gradient here as a fill color
-                borderColor: "#80BFD3",
+                borderColor: "#0059FF",
                 pointBackgroundColor: "#fff",
-                pointBorderColor: "#80BFD3",
+                pointBorderColor: "#0059FF",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "#80BFD3",
+                pointHighlightStroke: "#0059FF",
                 fill: true,
                 cubicInterpolationMode: 'monotone',
                 tension: 10,
